@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav flex-wrap="nowrap" class="nav_bar">
+      <ul>
+        <li id="nav_1">
+          <a classe="titre_nav" href="">JustStreamIt</a>
+        </li>
+        <li id="nav_2">
+          <a classe="titre_nav" href="">Accueil</a>
+        </li>
+        <li>
+          <a id="nav_3" classe="titre_nav" href="">Catégories</a>
+        </li>
+      </ul>
+    </nav>
+    <h3 class="first_title"><br /></h3>
+    <div class="Meilleur_film"></div><br /><br />
+    <div class="mieux_notes">
+      <h3>Films les mieux notés</h3>
+      <div id="best_movies" class="cadre_films"></div>
+      <button class="prev-btn" onclick="prevSlide('best_movies')">
+        &#8249;
+      </button>
+      <button class="next-btn" onclick="nextSlide('best_movies')">
+        &#8250;
+      </button>
+    </div><br /><br />
+    <div class="categorie_1">
+      <h3>Famille</h3>
+      <div id="family_movies" class="cadre_films"></div>
+      <button class="prev-btn" onclick="prevSlide('family_movies')">
+        &#8249;
+      </button>
+      <button class="next-btn" onclick="nextSlide('family_movies')">
+        &#8250;
+      </button>
+    </div><br /><br />
+    <div class="categorie_2">
+      <h3>Musique</h3>
+      <div id="music_movies" class="cadre_films"></div>
+      <button class="prev-btn" onclick="prevSlide('music_movies')">
+        &#8249;
+      </button>
+      <button class="next-btn" onclick="nextSlide('music_movies')">
+        &#8250;
+      </button>
+    </div><br /><br />
+    <div class="categorie_3">
+      <h3>Horreur</h3>
+      <div id="horror_movies" class="cadre_films"></div>
+      <button class="prev-btn" onclick="prevSlide('horror_movies')">
+        &#8249;
+      </button>
+      <button class="next-btn" onclick="nextSlide('horror_movies')">
+        &#8250;
+      </button>
+    </div>
+
+    <div id="modale" class="modale" onclick="close_modal()">
+      <div id="modale_content"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

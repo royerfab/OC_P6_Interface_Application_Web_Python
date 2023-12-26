@@ -1,0 +1,133 @@
+      body {
+        background: linear-gradient(to bottom right, purple, 65%, orange);
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        padding: 8px;
+        font-size: 20px;
+        margin-right: 100px;
+        text-decoration: none;
+        color: black;
+      }
+      .Meilleur_film {
+        height: 500px;
+        border-radius: 5px;
+        margin-left: 100px;
+      }
+      #best_film_title {
+        font-size: 70px;
+        text-align : center;
+      }
+      #button_infos {
+        margin-left: 50px;
+      }
+      #best_film_description {
+        margin-left: 50px;
+        margin-top: 50px;
+        font-size: 25px;
+      }
+      .first_title {
+        margin-top: 100px;
+        font-size: 50px;
+      }
+      .cadre_films {
+        height: 300px;
+        width: 75%;
+        border: 1px white;
+        margin-left: 200px;
+        overflow-x: hidden ;
+        overflow-y: hidden;
+        white-space: nowrap ;
+      }
+      .film {
+        height: 300px;
+        width: 260px;
+        border: 1px white;
+        padding: 1px white;
+        margin-left: 20px;
+        display: inline-block;
+      }
+      .best_film {
+        display: flex;
+      }
+      .best_film > div {
+        margin: 10px;
+      }
+      .best_film > div > button {
+        width: 80px;
+        height: 30px;
+        border-radius: 16px;
+        background-color: black;
+        color: white;
+      }
+      .modale {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #808080cc;
+        padding-top: 100px;
+      }
+      #modale_content {
+        background-color: black;
+        color: white;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        display: flex;
+      }
+      #modale_content > div {
+        margin: 10px;
+      }
+      #fa-square-xmark {
+        height:16;
+        width:14;
+        viewBox: 0 0 448 512;
+        icon: fas, square-xmark;
+        square-xmark: f2d3;
+      }
+      h3 {
+        color: black;
+        font-family: sans-serif;
+        margin-left: 200px;
+        font-size: 25px;
+      }
+      .tire_nav {
+        font-family: sans-serif;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .prev-btn,
+      .next-btn {
+        position: absolute;
+        transform: translateY(-275%);
+        font-size: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .prev-btn {
+        left: 10px;
+      }
+
+      .next-btn {
+        right: 10px;
+      }
