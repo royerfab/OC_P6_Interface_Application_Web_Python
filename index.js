@@ -58,7 +58,9 @@ function modale_content(movie_id) {
                         <h2 id="dialog-title">${data.title ?? ""}</h2>
                         <p id="movie_genre">${data.genre ?? ""}</p>
                         <p id="year">${data.year ?? ""}</p>
-                        <p id="rated">Critique : ${data.rated ?? ""} /10</p>
+                        <p id="rated">Critique : ${
+                          isNaN(data.rated) ? data.rated : data.rated + "/10"
+                        }</p>
                         <p id="imbd">Score imbd : ${data.imdb_score ?? ""}</p>
                         <p id="directors">Réalisateur : ${
                           data.directors ?? ""
@@ -74,10 +76,7 @@ function modale_content(movie_id) {
                         }</p>
                     </div>
                     <div>
-                        <i id="fa-square-xmark" xmlns="http://www.w3.org/2000/svg"></i>
-                        <img
-                            src="https://fontawesome.com/icons/square-xmark?f=classic&s=solid"}"
-                        />
+                        <i class="fa-solid fa-square-xmark"></i>                   
                     </div>
                 `;
     });

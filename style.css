@@ -38,6 +38,7 @@
       .first_title {
         margin-top: 100px;
         font-size: 50px;
+        color: #80008000;
       }
       .cadre_films {
         height: 300px;
@@ -52,7 +53,7 @@
         height: 300px;
         width: 260px;
         border: 1px white;
-        padding: 1px white;
+        padding: 1px;
         margin-left: 20px;
         display: inline-block;
       }
@@ -91,21 +92,14 @@
       #modale_content > div {
         margin: 10px;
       }
-      #fa-square-xmark {
-        height:16;
-        width:14;
-        viewBox: 0 0 448 512;
-        icon: fas, square-xmark;
-        square-xmark: f2d3;
-      }
       h3 {
         color: black;
         font-family: sans-serif;
         margin-left: 200px;
         font-size: 25px;
       }
-      .tire_nav {
-        font-family: sans-serif;
+      .nav_bar {
+        flex-wrap: nowrap;
       }
       img {
         width: 100%;
